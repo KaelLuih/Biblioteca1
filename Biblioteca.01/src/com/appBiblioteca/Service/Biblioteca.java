@@ -21,8 +21,9 @@ public class Biblioteca {
 				String nome = atendente.CadastrarTitulo();
 				int quantidade = atendente.CadastrarQuantidade();
 				double preco = atendente.CadastraPreço();	
+				boolean Emprestimo=atendente.CadastrarEmprestimo();
 
-				LivroCadastro = new Livro(nome, quantidade, preco, autor);
+				LivroCadastro = new Livro(nome, quantidade, preco, autor, Emprestimo);
 				livros.add(LivroCadastro);
 				break;
 
@@ -83,7 +84,11 @@ public class Biblioteca {
 									
 									break;
 								}
+								
 				}
+				
+						case 6:
+							atendente.MostrarTotalDeLivros(getLivroCadastro());
 		}
 	}
 

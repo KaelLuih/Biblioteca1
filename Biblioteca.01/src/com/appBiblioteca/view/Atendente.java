@@ -24,7 +24,8 @@ public class Atendente {
 		System.out.println("║   2 ▸ Listar todos os livros                  ║");
 		System.out.println("║   3 ▸ Deletar um livro                        ║");
 		System.out.println("║   4 ▸ Pesquisar um livro                      ║");
-		System.out.println("║   5 ▸ Editar um livro                      ║");
+		System.out.println("║   5 ▸ Editar um livro                         ║");
+		System.out.println("║   6 ▸ Mostar numeros de livros cadastrados    ║");
 		System.out.println("╚═══════════════════════════════════════════════╝");
 		System.out.print ("→ Digite a opção desejada: ");
 
@@ -32,7 +33,7 @@ public class Atendente {
 	input.nextLine();
 	return EscolhaDoMenu;
 	 
-	
+	System.out.println("dsadsa");
 	}
 	public String CadastrarAutor() {
 		System.out.println("Digite o nome do autor");
@@ -54,6 +55,13 @@ public class Atendente {
 		double Preco = input.nextDouble();
 		return Preco;
 	}
+	public boolean CadastrarEmprestimo() {
+		System.out.println("Digite se foi emprestado ou nao ")
+		
+		
+		return Emprestimo;
+	}
+	
 	public void ListarLivros(List<Livro> livros) {
 		for(Livro liv: livros) {
 		System.out.println("--------------------");
@@ -79,11 +87,34 @@ public class Atendente {
 		System.out.println("Digite qual livro deseja editar");
 		 return input.nextLine();
 	}
+	public void MostrarTotalDeLivros(List<Livro> livros) {
+	     if(livros==null || livros.isEmpty()) {
+				System.out.println("Não há nenhum livro cadastrado");
+			}else {
+			System.out.println("O numero total de livros cadastrados é de " + livros.size());
+			}
+			}
 	
+
+public String LivroEmprestado() {
+	System.out.println("Este livro ja esta em um emprestimo? ");
 
 	
 	
-
 	
+	
+	return null;
 	
 }
+
+
+
+
+}
+
+	
+	
+
+	
+
+
