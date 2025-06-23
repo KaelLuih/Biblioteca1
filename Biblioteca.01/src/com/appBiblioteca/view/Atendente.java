@@ -32,9 +32,7 @@ public class Atendente {
 	int EscolhaDoMenu=input.nextInt();
 	input.nextLine();
 	return EscolhaDoMenu;
-	 
-	System.out.println("dsadsa");
-	}
+
 	public String CadastrarAutor() {
 		System.out.println("Digite o nome do autor");
 		String Autor = input.nextLine();
